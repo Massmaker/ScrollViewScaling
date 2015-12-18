@@ -27,8 +27,8 @@
                                     <constraint firstAttribute="width" constant="300" id="5O5-Rt-ZlX"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mjc-4K-62a"/>
-                                    <outletCollection property="gestureRecognizers" destination="gny-cX-wTq" appends="YES" id="gs4-oP-5fN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2X9-WO-4B2"/>
+                                    <outletCollection property="gestureRecognizers" destination="gny-cX-wTq" appends="YES" id="NYr-C8-7Gy"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -39,13 +39,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollingView" destination="ad7-hl-drn" id="ogc-R0-n5E"/>
+                        <outlet property="scrollingView" destination="ad7-hl-drn" id="3I5-LA-EaM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="gny-cX-wTq">
                     <connections>
-                        <action selector="doubleTapAction:" destination="BYZ-38-t0r" id="6rW-td-rz1"/>
+                        <action selector="doubleTapAction:" destination="BYZ-38-t0r" id="2h0-mg-Z6Z"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
