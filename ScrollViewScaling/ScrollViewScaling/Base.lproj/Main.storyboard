@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="ad7-hl-drn">
+                                <rect key="frame" x="150" y="105" width="300" height="390"/>
+                                <color key="backgroundColor" red="0.13645310960000001" green="0.59057903410000001" blue="0.071161886209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ad7-hl-drn" secondAttribute="height" multiplier="10:13" id="3Ni-8G-FUd"/>
+                                    <constraint firstAttribute="width" constant="300" id="5O5-Rt-ZlX"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mjc-4K-62a"/>
+                                    <outletCollection property="gestureRecognizers" destination="gny-cX-wTq" appends="YES" id="gs4-oP-5fN"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ad7-hl-drn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWa-hc-ziF"/>
+                            <constraint firstItem="ad7-hl-drn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ahU-0Q-xjb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollingView" destination="ad7-hl-drn" id="ogc-R0-n5E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="gny-cX-wTq">
+                    <connections>
+                        <action selector="doubleTapAction:" destination="BYZ-38-t0r" id="6rW-td-rz1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="323" y="436"/>
         </scene>
     </scenes>
 </document>

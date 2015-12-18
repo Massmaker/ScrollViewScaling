@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BCB9624C1C24937400B29E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9624B1C24937400B29E67 /* AppDelegate.swift */; };
-		BCB962511C24937400B29E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB9624F1C24937400B29E67 /* Main.storyboard */; };
 		BCB962531C24937400B29E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB962521C24937400B29E67 /* Assets.xcassets */; };
 		BCB962561C24937400B29E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB962541C24937400B29E67 /* LaunchScreen.storyboard */; };
 		BCB9625F1C24941D00B29E67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9625E1C24941D00B29E67 /* ViewController.swift */; };
+		BCB962621C24945E00B29E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB962601C24945E00B29E67 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCB962481C24937400B29E67 /* ScrollViewScaling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewScaling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB9624B1C24937400B29E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCB962501C24937400B29E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB962521C24937400B29E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB962551C24937400B29E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB962571C24937400B29E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB9625E1C24941D00B29E67 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCB962611C24945E00B29E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				BCB9624B1C24937400B29E67 /* AppDelegate.swift */,
-				BCB9624F1C24937400B29E67 /* Main.storyboard */,
 				BCB962521C24937400B29E67 /* Assets.xcassets */,
 				BCB962541C24937400B29E67 /* LaunchScreen.storyboard */,
 				BCB962571C24937400B29E67 /* Info.plist */,
+				BCB962601C24945E00B29E67 /* Main.storyboard */,
 				BCB9625D1C24941000B29E67 /* ViewControllers */,
 			);
 			path = ScrollViewScaling;
@@ -130,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB962621C24945E00B29E67 /* Main.storyboard in Resources */,
 				BCB962561C24937400B29E67 /* LaunchScreen.storyboard in Resources */,
 				BCB962531C24937400B29E67 /* Assets.xcassets in Resources */,
-				BCB962511C24937400B29E67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,20 +151,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCB9624F1C24937400B29E67 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCB962501C24937400B29E67 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCB962541C24937400B29E67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BCB962551C24937400B29E67 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCB962601C24945E00B29E67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCB962611C24945E00B29E67 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

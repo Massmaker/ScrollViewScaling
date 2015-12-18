@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  ScrollViewScaling
-//
-//  Created by Ivan Yavorin on 12/18/15.
-//  Copyright © 2015 Massmaker. All rights reserved.
-//
+
 
 import UIKit
 

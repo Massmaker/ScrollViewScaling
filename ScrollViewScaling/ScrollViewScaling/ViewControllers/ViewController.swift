@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  ScrollViewScaling
-//
-//  Created by CloudCraft on 12/16/15.
-//  Copyright © 2015 CloudCraft. All rights reserved.
-//
+
 
 import UIKit
 
